@@ -1,0 +1,36 @@
+---
+import "../styles/global.css";
+import { Image } from "astro:assets";
+import foto from "../assets/iberian.jpg";
+---
+
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body class="bg-black text-white font-light">
+		<div class="flex h-screen min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+      <div class="sm:mx-auto sm:w-full sm:max-w-5xl">
+        <section class="body-font">
+          <div class="container mx-auto flex flex-col items-center  md:flex-row">
+            <div class="mb-16 flex flex-col items-center text-center md:mb-0 md:w-1/2 md:items-start md:pr-16 md:text-left lg:flex-grow lg:pr-24">
+              <h1 class="title-font mb-4 text-5xl font-medium sm:text-5xl text-cyan-400">Iberian</h1>
+              <p class="mb-2">Developer by trade, investor by choice.</p>
+              <p class="mb-2">Half-retired, back to building at my own pace.</p>
+              <p class="mb-2">AI-assisted. Fintech first.</p>
+            </div>
+            <div>
+              <Image src={foto} alt="Iberian" class="rounded-full object-cover object-center" alt="hero" width={400} height={400} />
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+	</body>
+</html>
